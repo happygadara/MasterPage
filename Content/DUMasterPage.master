@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DUMasterPage.master.cs" Inherits="Content_DUMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+   
+    <asp:ContentPlaceHolder id="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class=" font" >
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <asp:Image runat="server"  SkinID="DarshanLogo" Class="logo"/>
+                    </div>
+                     <div class="col-md-9 header">
+                          <div class="topnav">
+                          <div class="topnav-right">
+                              <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/DUWebSite/Home.aspx">Home</asp:HyperLink>
+                              <asp:HyperLink ID="hlAbout" runat="server" NavigateUrl="~/DUWebSite/AboutDU.aspx">About</asp:HyperLink>
+                              <asp:HyperLink ID="hlDepartment" runat="server" NavigateUrl="~/DUWebSite/Department.aspx">Department</asp:HyperLink>
+                              <asp:HyperLink ID="hlLibrary" runat="server" NavigateUrl="~/DUWebSite/Library.aspx">Library</asp:HyperLink>
+                              <asp:HyperLink ID="hlEvents" runat="server" NavigateUrl="~/DUWebSite/Events.aspx">Events</asp:HyperLink>
+                              <asp:HyperLink ID="hlCareer" runat="server" NavigateUrl="~/DUWebSite/Career.aspx">Career</asp:HyperLink>
+                              <asp:HyperLink ID="hlNCC" runat="server" NavigateUrl="~/DUWebSite/NCC.aspx">NCC</asp:HyperLink>
+                              <asp:HyperLink ID="hlNews" runat="server" NavigateUrl="~/DUWebSite/News.aspx">News</asp:HyperLink>
+                              <asp:HyperLink ID="hlFaculty" runat="server" NavigateUrl="~/DUWebSite/BookBank.aspx">Book Bank</asp:HyperLink>
+                              <asp:HyperLink ID="hlContact" runat="server" NavigateUrl="~/DUWebSite/Contact.aspx">Contact</asp:HyperLink>
+                          </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                 <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+                 </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="row footer">
+            <div class="container" style="background-color: black; color: #d7d6d6;">
+                <div class="container text-center text-md-left mt-5 contentfont" style="background-color: black; color: #d7d6d6;">
+                    <div class="row mt-3" style="background-color: black; color: #d7d6d6;">
+                        <div class="col-md-3 col-lg-4 col-xl-3 contentfont">
+                            <h6 class="font contentfont" style="color: #44d804">ABOUT US</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>Darshan Institute of Engineering & Technology is a leading institute offering undergraduate (B.E.), postgraduate (M.E.) and Diploma programs in engineering.</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 font">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase contentfont" style="color: #44d804">FOR STUDENT</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p class="contentfont">
+
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/Department.aspx" Style="color: #d7d6d6">Department</asp:HyperLink>
+                            </p>
+                            <p class="contentfont">
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/Library.aspx" Style="color: #d7d6d6">Library</asp:HyperLink>
+                            </p>
+                            <p class="contentfont">
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/Career.aspx" Style="color: #d7d6d6">Career</asp:HyperLink>
+                            </p>
+                            <p class="contentfont">
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/BookBank.aspx" Style="color: #d7d6d6">Book Bank</asp:HyperLink>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase contentfont" style="color: #44d804">FOR OTHERS</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block " style="width: 60px;">
+                            <p>
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/AboutDU.aspx" Style="color: #d7d6d6">About</asp:HyperLink>
+                            </p>
+                            <p>
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/Events.aspx" Style="color: #d7d6d6">Events</asp:HyperLink>
+                            </p>
+                            <p>
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/News.aspx" Style="color: #d7d6d6">News</asp:HyperLink>
+                            </p>
+                            <p>
+                                <asp:HyperLink runat="server" NavigateUrl="~/DUWebSite/Contact.aspx" Style="color: #d7d6d6">Contact</asp:HyperLink>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase font-weight-bold" style="color: #44d804">OUR CONTACTS</h6>
+                            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                            <p>
+                                <i class="fas fa-home mr-3"></i>&nbsp;At Hadala, Rajkot - Morbi Highway,
+                                                                Gujarat-363650, INDIA
+                            </p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i>&nbsp;info@darshan.ac.in
+                            </p>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i>&nbsp;(+91) 97277 47310
+                            </p>
+                            <p>
+                                <i class="fas fa-print mr-3"></i>&nbsp;(+91) 97277 47311
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3">
+                    2020 © All Rights Reserved.Terms & Conditions
+                </div>
+            </div>
+            </div>
+        </div>
+       
+    </form>
+</body>
+</html>

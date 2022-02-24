@@ -1,0 +1,163 @@
+﻿
+.font {
+            font-family:Open Sans;
+            font-style: normal;
+            font-weight:bold;
+        }
+.topnav a {
+  float: left;
+  color: #575353;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  overflow:hidden;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+.logo
+{
+     height:75px;
+     padding-top:16px;
+     padding-left:30px;
+     padding-bottom:4px;
+}
+.about
+{
+    color:#575353;
+    background-color:#575353;
+}
+.footer
+{
+    background-color:black;
+    padding-top:15px;
+   
+}
+.footer A
+{
+   
+    text-decoration:none;
+    font-weight:normal;
+}
+.footer A:hover
+{
+     
+   
+    font-weight:700;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+img
+{
+   height:auto;
+}
+.footer1
+{
+    background-color:#ddd;
+    font-weight:700;
+}
+.about
+{
+    background-color:black;
+    color:#ffffff;
+    padding-top:20px;
+    padding-left:40px;
+    padding-bottom:20px;
+    margin-top:10px;
+}
+.contentfont
+{
+    font-family:Roboto Slab;
+    font-weight:400;
+   
+}
+.contentP
+{
+    text-align:justify;
+    padding-left:38px;
+    padding-right:38px;
+    line-height:28px;
+    word-spacing:5px;
+}
+.headerblack
+{
+    margin-top:30px;
+   
+}
+.h5
+{
+    font-weight:bold;
+    padding-left:38px;
+}
+.ul_li_p
+{
+    margin-left:20px;
+}
+
+
+{
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#57c05c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.btn
+{
+    margin-left:300px;
+    width:100px;
+}
